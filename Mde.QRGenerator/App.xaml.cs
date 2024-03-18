@@ -10,7 +10,7 @@ namespace Mde.QRGenerator
         {
             InitializeComponent();
 
-            MainPage = new CreatePage();
+            MainPage = new AppShell();
         }
 
         protected override Window CreateWindow(IActivationState activationState)

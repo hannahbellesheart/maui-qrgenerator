@@ -6,5 +6,10 @@
         {
             InitializeComponent();
         }
+
+        private async void SiteLink_Clicked(object sender, EventArgs e)
+        {
+            await Launcher.OpenAsync("https://www.howest.be/en");
+        }
     }
 }
