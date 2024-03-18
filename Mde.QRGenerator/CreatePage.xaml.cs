@@ -1,0 +1,9 @@
+namespace Mde.QRGenerator;
+
+public partial class CreatePage : ContentPage
+{
+	public CreatePage()
+	{
+		InitializeComponent();
+	}
+}
