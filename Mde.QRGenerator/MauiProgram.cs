@@ -15,8 +15,10 @@ namespace Mde.QRGenerator
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+            Routing.RegisterRoute("//qr/generate", typeof(ViewQRPage));
+
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

@@ -6,4 +6,10 @@ public partial class CreatePage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void btnCreate_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("//qr/generate");
+    }
+
 }

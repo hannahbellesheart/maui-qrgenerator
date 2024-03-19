@@ -7,17 +7,19 @@
     Shell.FlyoutBehavior="Flyout">
 
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
-        <Tab Title="Create QR">
-            <ShellContent ContentTemplate="{DataTemplate local:CreatePage}" />
+        <Tab Title="Create QR" Route="qr">
+            <ShellContent Route="input"
+                          ContentTemplate="{DataTemplate local:CreatePage}" />
         </Tab>
-        <Tab Title="Settings">
-            <ShellContent ContentTemplate="{DataTemplate local:SettingsPage}" />
+        <Tab Title="Settings" Route="config">
+            <ShellContent Route="settings" 
+                          ContentTemplate="{DataTemplate local:SettingsPage}" />
         </Tab>
         <Tab Title="About">
-            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
+            <ShellContent Route="about" 
+                          ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
     </FlyoutItem>
     <MenuItem x:Name="SiteLink" Text="Made by PROG" Clicked="SiteLink_Clicked" />
-
 
 </Shell>
