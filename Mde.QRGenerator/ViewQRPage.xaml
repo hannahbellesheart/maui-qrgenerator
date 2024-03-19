@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:qrview="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
              x:Class="Mde.QRGenerator.ViewQRPage"
              Title="View QR Code">
     <VerticalStackLayout>
@@ -8,5 +9,10 @@
                Margin="15"
                VerticalOptions="Center" 
                HorizontalOptions="Center" />
+        <qrview:BarcodeGeneratorView 
+            x:Name="barcodeGenerator"
+            Format="QrCode"
+            WidthRequest="200"
+            HeightRequest="200" />
     </VerticalStackLayout>
 </ContentPage>

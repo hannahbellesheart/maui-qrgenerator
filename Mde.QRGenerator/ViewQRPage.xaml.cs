@@ -12,6 +12,7 @@ public partial class ViewQRPage : ContentPage
         set
         {
             lblContent.Text = value;
+            barcodeGenerator.Value = value;
         }
     }
 
