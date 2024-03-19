@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mde.QRGenerator.SettingsPage"
              Title="Settings">
-    <VerticalStackLayout>
+    <VerticalStackLayout VerticalOptions="Center">
         <Label 
             Text="Settings will go here"
             VerticalOptions="Center" 

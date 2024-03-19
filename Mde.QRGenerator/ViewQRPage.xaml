@@ -4,7 +4,7 @@
              xmlns:qrview="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
              x:Class="Mde.QRGenerator.ViewQRPage"
              Title="View QR Code">
-    <VerticalStackLayout>
+    <VerticalStackLayout VerticalOptions="Center">
         <Label x:Name="lblContent"
                Margin="15"
                VerticalOptions="Center" 

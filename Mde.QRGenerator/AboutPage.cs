@@ -7,6 +7,7 @@ public class AboutPage : ContentPage
 		Title = "About";
 		Content = new VerticalStackLayout
 		{
+			VerticalOptions = LayoutOptions.Center,
 			Children = {
 				new Label { 
 					HorizontalOptions = LayoutOptions.Center, 
