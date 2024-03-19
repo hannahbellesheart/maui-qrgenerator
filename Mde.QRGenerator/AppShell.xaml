@@ -6,10 +6,7 @@
     xmlns:local="clr-namespace:Mde.QRGenerator"
     Shell.FlyoutBehavior="Flyout">
 
-    <FlyoutItem>
-        <Tab Title="Create QR">
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
-        </Tab>
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <Tab Title="Create QR">
             <ShellContent ContentTemplate="{DataTemplate local:CreatePage}" />
         </Tab>
