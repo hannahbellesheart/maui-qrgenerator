@@ -5,10 +5,23 @@
              HideSoftInputOnTapped="True"
              Title="QR Generator">
     <VerticalStackLayout VerticalOptions="Center">
+
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+            <RadioButton Content="Black" Value="#000000" IsChecked="True"
+                         CheckedChanged="OnColorChanged" />
+            <RadioButton Content="Red" Value="#A83232"
+                         CheckedChanged="OnColorChanged" />
+            <RadioButton Content="Green" Value="#32A852"
+                         CheckedChanged="OnColorChanged" />
+            <RadioButton Content="Blue" Value="#3432A8"
+                         CheckedChanged="OnColorChanged" />
+        </HorizontalStackLayout>
+
         <Entry x:Name="txtInput" 
                HorizontalTextAlignment="Center"
                HorizontalOptions="Center" 
                WidthRequest="200" Margin="15" />
+        
         <Button 
             x:Name="btnCreate"
             Clicked="btnCreate_Clicked" 
