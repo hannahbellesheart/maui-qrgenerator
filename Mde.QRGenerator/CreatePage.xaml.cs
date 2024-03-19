@@ -9,7 +9,7 @@ public partial class CreatePage : ContentPage
 
     private async void btnCreate_Clicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("//qr/generate");
+        await Shell.Current.GoToAsync($"//qr/generate?qrcontent={txtInput.Text}");
     }
 
 }

@@ -4,9 +4,9 @@
              x:Class="Mde.QRGenerator.ViewQRPage"
              Title="View QR Code">
     <VerticalStackLayout>
-        <Label 
-            Text="Generated QR will be visible here"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label x:Name="lblContent"
+               Margin="15"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
     </VerticalStackLayout>
 </ContentPage>

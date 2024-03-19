@@ -4,6 +4,10 @@
              x:Class="Mde.QRGenerator.CreatePage"
              Title="QR Generator">
     <VerticalStackLayout VerticalOptions="Center">
+        <Entry x:Name="txtInput" 
+               HorizontalTextAlignment="Center"
+               HorizontalOptions="Center" 
+               WidthRequest="200" Margin="15" />
         <Button 
             x:Name="btnCreate"
             Clicked="btnCreate_Clicked"
